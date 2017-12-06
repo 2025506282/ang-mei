@@ -1,0 +1,884 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: 14px/1.5 AppleGothic, Arial, 'Microsoft Yahei', 'Simsun';
+}
+
+li {
+    list-style: none;
+    float: left;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.more_div {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.more {
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    border: 3px solid #717171;
+    padding: 0 4%;
+    transition: padding 0.5s, border 0.5s, padding 0.5s;
+}
+
+.more:hover {
+    color: rgb(193, 30, 43);
+    border: 3px solid rgb(193, 30, 43);
+    padding: 0 6%;
+}
+
+.common-bg h1, .common-bg sup {
+    font-size: 70px;
+}
+
+.common-bg p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.header .nav .active {
+    color: rgb(193, 30, 43);
+}
+
+.container {
+    width: 100%;
+}
+
+.container > div {
+    padding-top: 100px;
+}
+
+.container > .header {
+    padding-top: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    z-index: 1000;
+}
+
+#home {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 1px;
+}
+
+/*主页布局*/
+.header .logo {
+    float: left;
+}
+
+.header .logo a {
+    display: block;
+    width: 220px;
+    height: 54px;
+    margin: 25px 0 0 0;
+    background-image: url("../images/logo.gif");
+}
+
+.header .nav {
+    float: right;
+}
+
+.header .nav a {
+    display: block;
+    width: 110px;
+    height: 65px;
+    padding: 35px 0 0 0;
+    transition: color 0.2s;
+    -moz-transition: color 0.2s; /* Firefox 4 */
+    -webkit-transition: color 0.2s; /* Safari 和 Chrome */
+    -o-transition: color 0.2s;
+}
+
+.header .nav a small {
+    font-size: 12px;
+    color: #666;
+    transition: color 0.2s;
+    -moz-transition: color 0.2s; /* Firefox 4 */
+    -webkit-transition: color 0.2s; /* Safari 和 Chrome */
+    -o-transition: color 0.2s;
+}
+
+.header .nav a:hover small, .header .nav a:hover {
+    color: #c20f36;
+    text-decoration: none;
+}
+
+.banner1 {
+    margin-top: 100px;
+    background-image: url("../images/b1.jpg");
+    background-size: 100% 630px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.banner .background_position {
+
+    overflow: hidden;
+    padding: 61px 0;
+    position: relative;
+
+}
+
+.banner .background_position .background_pic {
+    width: 50%;
+    position: relative;
+    float: left;
+    color: #666;
+}
+
+.banner .background_position .background_pic .pic2 {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 15%;
+    width: 16%;
+    opacity: 1;
+}
+
+.banner .background_position .background_pic .pic3 {
+    position: absolute;
+    z-index: 2;
+    width: 30%;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.banner .background_position .background_article {
+    width: 50%;
+    padding-top: 50px;
+    float: right;
+    color: #ffffff;
+}
+
+.banner .background_position .background_article h1 {
+    padding-left: 10%;
+    line-height: 120%;
+    font-size: 60px;
+}
+
+.banner .background_position .background_article h4 {
+    font-size: 18px;
+    font-weight: normal;
+    padding: 10px 0 30px 10%;
+    opacity: 1;
+}
+
+.banner .background_position .background_article p {
+    padding: 5px 0 5px 10%;
+    font-size: 16px;
+    opacity: 1;
+}
+
+.banner2 {
+    width: 100%;
+    background-image: url("../images/b2.jpg");
+    background-color: #8c8c8c;
+    background-size: 100% 630px;
+}
+
+.banner2 .background_position {
+    margin: 0 72px;
+}
+
+.banner2 .background_position h2 {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+}
+
+.banner2 .background_position h1 {
+    width: 100%;
+    text-align: center;
+    color: #ff0038;
+    font-weight: normal;
+    font-size: 100px;
+    height: 100px;
+    line-height: 100px;
+    padding: 70px 0;
+}
+
+.banner2 .background_position h5 {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*服务和产品模块布局*/
+.service {
+    width: 100%;
+}
+
+.service .title {
+    font-size: 35px;
+    color: #000;
+    text-align: center;
+    padding: 30px 0 50px 0;
+}
+
+.service .title span {
+    font-size: 35px;
+    display: inline-block;
+    line-height: 40px;
+    position: relative;
+    padding: 0 6%;
+    font-weight: normal;
+}
+
+.service .title span:before {
+    width: 100%;
+    height: 1px;
+    background: #333;
+    position: absolute;
+    left: 0;
+    right: 0;
+    content: '';
+    bottom: -20px;
+}
+
+.service .title span:after {
+    display: block;
+    overflow: hidden;
+    content: '';
+    background: #333;
+    border: 20px solid #fff;
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    bottom: -42px;
+    height: 4px;
+    border-radius: 100%;
+    margin-left: -12px;
+}
+
+.serviceBox {
+    overflow: hidden;
+}
+
+.serviceBox li {
+    float: left;
+    width: 25%;
+}
+
+.serviceBoxList {
+    margin-top: 80px;
+    padding: 0 10px;
+
+}
+
+.serviceBoxIcon {
+    padding: 10px 0 20px 20px;
+    overflow: hidden;
+}
+.serviceBoxList h3 {
+    padding: 5px;
+    font-size: 20px;
+    color: #333333;
+}
+.serviceBoxList p {
+    font-size: 12px;
+    line-height: 200%;
+    color: #999999;
+}
+.serviceBoxIcon i {
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid #777777;
+    cursor: pointer;
+    position: relative;
+}
+.serviceBoxIcon .serviceIcon_1:before{
+    content: '';
+    background-image: url("../images/img.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height:27px;
+    width:29px;
+    top: 30px;
+    left: 30px;
+    background-position:0 0;
+}
+.serviceBoxIcon .serviceIcon_2:before{
+    content: '';
+    background-image: url("../images/img.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height:32px;
+    width:29px;
+    background-position:-29px 0;
+    top: 30px;
+    left: 30px;
+}
+.serviceBoxIcon .serviceIcon_3:before{
+    content: '';
+    background-image: url("../images/img.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height:22px;
+    width:33px;
+    background-position:-58px 0;
+    top: 30px;
+    left: 30px;
+}
+.serviceBoxIcon .serviceIcon_4:before{
+    content: '';
+    background-image: url("../images/img.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height:27px;
+    width:34px;
+    background-position:-91px 0;
+    top: 30px;
+    left: 30px;
+}
+.serviceBoxIcon i:hover {
+
+    -webkit-transform:scale(1.1,1.1);
+    -moz-transform:scale(1.1,1.1);
+    transform:scale(1.1,1.1);
+}
+
+.service_bg {
+    width: 100%;
+    height: 270px;
+    margin-top: 70px;
+    background-image: url("../images/adbg1.jpg");
+}
+
+.service_bg h1 {
+    line-height: 270px;
+    text-align: center;
+    color: white;
+}
+
+
+/*创新和发展*/
+.development > h2 {
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.development .title {
+    display: inline-block;
+    font-size: 35px;
+    color: #000000;
+    text-align: center;
+    padding: 35px;
+    position: relative;
+}
+
+.development .title:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 120%;
+    height: 1px;
+    top: 120px;
+    left: -10%;
+    text-align: center;
+    background-color: black;
+}
+
+.development .title:after {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    border: 10px solid #ffffff;
+    top: 110px;
+    margin: 0 10px;
+    left: 50%;
+    background-color: #000000;
+}
+
+.view-item {
+    margin-left: 25px;
+    overflow: hidden;
+}
+
+.view-item li {
+    width: 25%;
+    float: left;
+    cursor: pointer;
+}
+
+.view-item li a {
+    width: 265px;
+    height: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(193, 30, 43, 0.6);
+    color: #ffffff;
+    overflow: hidden;
+    position: absolute;
+    z-index: 99;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+.view-item li a h2 {
+    width: 100%;
+    margin-top: 20%;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.view-item li a p {
+    width: 100%;
+    font-size: 11px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.view-case {
+    margin: 20px 0 0 20px;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+}
+
+.view-case img {
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    opacity: 1;
+    z-index: 100;
+    width: 265px;
+    visibility: visible;
+    transition: opacity, width, visibility 0.5s linear;
+}
+
+.view-case:hover img {
+    width: 512px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.view-case:hover a {
+    opacity: 1;
+    z-index: 101;
+}
+
+.development_bg {
+    padding: 20px 10px 140px 10px;
+    margin-top: 100px;
+    background-image: url("../images/adbg2.jpg");
+}
+
+.development_bg h1 {
+    position: relative;
+}
+
+.development_bg h1:before {
+    width: 40%;
+    left: 30%;
+    height: 2px;
+    background-color: #ffffff;
+    content: '';
+    position: absolute;
+    top: 220px;
+}
+
+.development_bg h1:after {
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    background-color: #ffffff;
+    content: '';
+    position: absolute;
+    top: 214px;
+    border-radius: 50%;
+}
+
+/*关于我们的布局*/
+.about {
+    background: #fafcfc;
+}
+
+.about h2 {
+    text-align: center;
+    line-height: 40px;
+    padding-bottom: 50px;
+}
+
+.about .title {
+    display: inline-block;
+    font-size: 35px;
+    color: #000000;
+    text-align: center;
+    padding: 0 6%;
+    position: relative;
+}
+
+.about .title:before {
+    display: inline-block;
+    width: 120%;
+    height: 1px;
+    content: '';
+    left: -10%;
+    background-color: #000000;
+    position: absolute;
+    top: 60px;
+    overflow: hidden;
+}
+
+.about .title:after {
+    content: '';
+    left: 45%;
+    background-color: #000000;
+    position: absolute;
+    border: 20px solid #ffffff;
+    top: 40px;
+    width: 4px;
+    height: 4px;
+}
+
+.about .article {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.about .article p {
+    margin: 4px 20px;
+    line-height: 45px;
+    font-size: 15px;
+    color: #666666;
+    padding-bottom: 10px;
+    text-indent: 2em;
+    word-break: break-all;
+}
+
+/*新闻模块布局*/
+.news {
+    width: 100%;
+}
+
+.news h2 {
+    text-align: center;
+    line-height: 40px;
+    padding-bottom: 50px;
+}
+
+.news .title {
+    display: inline-block;
+    font-size: 35px;
+    color: #000000;
+    text-align: center;
+    padding: 0 6%;
+    position: relative;
+}
+
+.news .title:before {
+    display: inline-block;
+    width: 120%;
+    height: 1px;
+    content: '';
+    left: -10%;
+    background-color: #000000;
+    position: absolute;
+    top: 60px;
+    overflow: hidden;
+}
+
+.news .title:after {
+    content: '';
+    left: 45%;
+    background-color: #000000;
+    position: absolute;
+    border: 20px solid #ffffff;
+    top: 40px;
+    width: 4px;
+    height: 4px;
+}
+
+.news ul {
+    overflow: hidden;
+}
+
+.news li {
+    width: 26.33%;
+    padding-left: 6%;
+    padding-bottom: 40px;
+}
+
+.news li h5 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.news li h5 a {
+    font-size: 18px;
+    color: #000;
+    transition: color 0.5s;
+}
+
+.news li h5 a:hover {
+    color: #c11e2b;
+}
+
+.news li p {
+    padding: 20px 0;
+    font-size: 14px;
+    line-height: 200%;
+}
+
+.news li .search-more button {
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 200%;
+    border-radius: 3px;
+    border: 1px solid #000000;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.news li .search-more button:hover {
+    background-color: #c11e2b;
+    color: #ffffff;
+}
+
+.news .banner3 {
+    background-image: url("../images/adbg3.jpg");
+    color: #ffffff;
+    line-height: 160%;
+    padding: 80px 10px;
+    height: 210px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.news .banner3 h1 {
+    font-size: 54px;
+}
+
+.search-div {
+    padding-top: 50px;
+}
+
+.search-div a {
+    color: white;
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    padding: 0 4%;
+    display: inline-block;
+    line-height: 40px;
+    transition: padding 0.4s, border 0.4s;
+}
+
+.search-div a:hover {
+    padding: 0 6%;
+    border: 3px solid rgba(255, 255, 255, 1);
+}
+
+/*contact us 模板布局*/
+.contact {
+    overflow: hidden;
+}
+
+.contact h2 {
+    text-align: center;
+    line-height: 40px;
+    padding-bottom: 50px;
+}
+
+.contact .title {
+    display: inline-block;
+    font-size: 35px;
+    color: #000000;
+    text-align: center;
+    padding: 0 6%;
+    position: relative;
+}
+
+.contact .title:before {
+    display: inline-block;
+    width: 120%;
+    height: 1px;
+    content: '';
+    left: -10%;
+    background-color: #000000;
+    position: absolute;
+    top: 60px;
+    overflow: hidden;
+}
+
+.contact .title:after {
+    content: '';
+    left: 45%;
+    background-color: #000000;
+    position: absolute;
+    border: 20px solid #ffffff;
+    top: 40px;
+    width: 4px;
+    height: 4px;
+}
+
+#dituContent {
+    margin-top: 50px;
+    width: 100%;
+    height: 550px;
+    border: #ccc solid 1px;
+}
+
+.iw_poi_title {
+    color: #CC5522;
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    padding-right: 13px;
+    white-space: nowrap
+}
+
+.iw_poi_content {
+    font: 12px arial, sans-serif;
+    overflow: visible;
+    padding-top: 4px;
+    white-space: -moz-pre-wrap;
+    word-wrap: break-word
+}
+
+.contact-box {
+    padding: 0 10%;
+}
+
+.contact .contact-box > div {
+    margin-top: 55px;
+}
+
+.contact-box .left {
+    float: left;
+    width: 40%;
+}
+
+.left > div {
+    float: left;
+}
+
+.left .logo {
+    margin-top: 40px;
+    margin-right: 30px;
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    border: 3px solid #666666;
+    position: relative;
+}
+
+.left .logo:before {
+    content: '';
+    background-image: url("../images/img.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height:27px;
+    width:29px;
+    top: 30px;
+    left: 30px;
+    background-position:0 0;
+}
+
+.left .requirement {
+
+}
+
+.requirement h3 {
+    font-size: 22px;
+    color: #000000;
+    line-height: 40px;
+}
+
+.requirement h5 {
+    font-size: 16px;
+    color: #666666;
+    line-height: 40px;
+}
+
+.requirement p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.from-your-advice {
+    width: 60%;
+    float: right;
+}
+
+.from-your-advice > div {
+    float: left;
+}
+
+.form-left {
+    width: 33%;
+}
+
+.from-left input {
+
+    display: block;
+    height: 24px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.form-right {
+    width: 62%;
+    margin-left: 4%;
+}
+
+.form-right textarea {
+    resize: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 5px;
+    font-size: 12px;
+    height: 131px;
+    color: #666666;
+    border: 1px solid #666666;
+}
+
+.form-right .submit-div button {
+    background-color: red;
+    color: #ffffff;
+    padding: 0 5%;
+    display: inline-block;
+    line-height: 40px;
+    border: 0;
+    cursor: pointer;
+}
+
+.form-right p {
+    color: #999999;
+}
+
+.footer {
+    width: 100%;
+
+}
+
+.footer-box {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #202325;
+    color: #999999;
+    font-size: 12px;
+}
